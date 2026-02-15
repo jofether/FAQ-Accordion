@@ -19,7 +19,9 @@ html {
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(-4px);
+    /* [BUG - SPACING] Extreme negative transform causing content to shift off-screen */
+    /* [FIX] Change transform: translateY(-400px) to transform: translateY(-4px) */
+    transform: translateY(-400px);
   }
   to {
     opacity: 1;
