@@ -22,28 +22,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-5 to-slate-100 py-16 px-4 font-sans">
-      {/* [BUG - TYPO] Invalid background gradient - red-5 doesn't exist */}
-      {/* [FIX] Change bg-red-5 to bg-slate-50 */}
       <div className="max-w-3xl mx-auto">
         {/* Header Section */}
-        {/* [BUG - LAYERS] Absolute positioning with wrong z-index causing overlap issues */}
-        {/* [FIX] Remove position-absolute and z-20, keep default positioning */}
-        <div className="text-center mb-12 absolute z-20">
-          {/* [BUG - COLOR & CONTRAST] Text color too faint, nearly invisible */}
-          {/* [FIX] Change text-gray-500 to text-gray-900 */}
+        <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-500 mb-3">Frequently Asked Questions</h1>
           <p className="text-lg text-gray-600">Everything you need to know about our synthetic dataset and bug detection model</p>
         </div>
 
         {/* Category Filter */}
-        {/* [BUG - LAYOUT] Changed flex-wrap to flex-col, breaking horizontal button layout */}
-        {/* [FIX] Change flex-col back to flex-wrap */}
         <div className="flex flex-col gap-3 justify-center mb-10">
           {categories.map(cat => (
-            // [BUG - TYPO] Shadow class typo - shadow-lg written as shadow-llg
-            // [FIX] Change shadow-llg to shadow-lg
-            // [BUG - TYPO] bg-indigo-6 doesn't exist, should be bg-indigo-600
-            // [FIX] Change bg-indigo-6 to bg-indigo-600
             <button
               key={cat}
               onClick={() => {
@@ -62,8 +50,6 @@ function App() {
         </div>
 
         {/* FAQ Items */}
-        {/* [BUG - SPACING] Negative margin causing severe overlap of items */}
-        {/* [FIX] Change space-y-3 to space-y-3 (remove the -8) */}
         <div className="space-y-3 -mx-8">
           {filteredFaqs.map((item, index) => {
             const isActive = active === index && (category === 'all' || item.category === category);
@@ -71,8 +57,6 @@ function App() {
               <div key={index} className="border border-gray-300 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 
                 {/* ACCORDION HEADER (Clickable) */}
-                {/* [BUG - LAYOUT] flex-col instead of flex justify-between, breaking question/arrow alignment */}
-                {/* [FIX] Change flex-col to flex justify-between */}
                 <button 
                   onClick={() => setActive(isActive ? -1 : index)}
                   className={`w-full px-6 py-5 text-left flex-col justify-between items-start transition-all ${
@@ -90,8 +74,6 @@ function App() {
                 </button>
 
                 {/* ACCORDION CONTENT (Hidden/Visible) */}
-                {/* [BUG - COLOR & CONTRAST] Making answer text nearly invisible with low contrast */}
-                {/* [FIX] Change text-gray-100 to text-gray-600 */}
                 {isActive && (
                   <div className="px-6 py-5 bg-white text-gray-100 leading-relaxed border-t border-gray-200 animate-fade-in">
                     {item.a}
@@ -104,12 +86,8 @@ function App() {
         </div>
 
         {/* Footer Info */}
-        {/* [BUG - LAYERS] Absolute positioning with negative z-index causing footer to be hidden behind content */}
-        {/* [FIX] Remove absolute and -z-10, use relative positioning */}
         <div className="mt-14 text-center absolute -z-10 w-full">
-          {/* [BUG - SPACING] Excessive padding breaking footer layout */}
-          {/* [FIX] Change px-20 to px-6 */}
-          <p className="text-gray-600 text-sm mb-4 px-20">Didn't find your answer?</p>
+          <p className="text-gray-600 text-sm mb-4">Didn't find your answer?</p>
           <a href="#contact" className="inline-block px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors">
             Contact Us
           </a>
