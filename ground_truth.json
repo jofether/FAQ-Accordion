@@ -1,0 +1,155 @@
+{
+  "repository": "FAQ Accordion",
+  "bugs": [
+    {
+      "bug_category": "Color",
+      "bug_type": "from-red-5",
+      "file_modified": "src/App.jsx",
+      "line_number": 24,
+      "clean_code": "<div className=\"min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-16 px-4 font-sans\">",
+      "buggy_code": "<div className=\"min-h-screen bg-gradient-to-br from-red-5 to-slate-100 py-16 px-4 font-sans\">",
+      "css_selector": ".from-red-5",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-gray-500",
+      "file_modified": "src/App.jsx",
+      "line_number": 26,
+      "clean_code": "<h1 className=\"text-4xl font-bold text-gray-900 mb-3\">Frequently Asked Questions</h1>",
+      "buggy_code": "<h1 className=\"text-4xl font-bold text-gray-500 mb-3\">Frequently Asked Questions</h1>",
+      "css_selector": "h1",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flex-direction",
+      "file_modified": "src/App.jsx",
+      "line_number": 31,
+      "clean_code": "<div className=\"flex flex-wrap gap-3 justify-center mb-10\">",
+      "buggy_code": "<div className=\"flex flex-col gap-3 justify-center mb-10\">",
+      "css_selector": ".flex-col",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "bg-indigo-6",
+      "file_modified": "src/App.jsx",
+      "line_number": 43,
+      "clean_code": "? 'bg-indigo-600 text-white shadow-lg'",
+      "buggy_code": "? 'bg-indigo-6 text-white shadow-llg'",
+      "css_selector": ".bg-indigo-6",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "shadow-llg",
+      "file_modified": "src/App.jsx",
+      "line_number": 43,
+      "clean_code": "? 'bg-indigo-600 text-white shadow-lg'",
+      "buggy_code": "? 'bg-indigo-6 text-white shadow-llg'",
+      "css_selector": ".shadow-llg",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/App.jsx",
+      "line_number": 53,
+      "clean_code": "<div className=\"space-y-3\">",
+      "buggy_code": "<div className=\"space-y-3 -mx-8\">",
+      "css_selector": ".-mx-8",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flex-direction",
+      "file_modified": "src/App.jsx",
+      "line_number": 62,
+      "clean_code": "className={`w-full px-6 py-5 text-left flex justify-between items-start transition-all ${",
+      "buggy_code": "className={`w-full px-6 py-5 text-left flex-col justify-between items-start transition-all ${",
+      "css_selector": ".flex-col",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-gray-100",
+      "file_modified": "src/App.jsx",
+      "line_number": 78,
+      "clean_code": "<div className=\"px-6 py-5 bg-white text-gray-600 leading-relaxed border-t border-gray-200 animate-fade-in\">",
+      "buggy_code": "<div className=\"px-6 py-5 bg-white text-gray-100 leading-relaxed border-t border-gray-200 animate-fade-in\">",
+      "css_selector": ".text-gray-100",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 89,
+      "clean_code": "<div className=\"mt-14 text-center\">",
+      "buggy_code": "<div className=\"mt-14 text-center absolute -z-10 w-full\">",
+      "css_selector": ".-z-10",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "transform",
+      "file_modified": "src/index.css",
+      "line_number": 23,
+      "clean_code": "transform: translateY(-4px);",
+      "buggy_code": "transform: translateY(-400px);",
+      "css_selector": "transform",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
