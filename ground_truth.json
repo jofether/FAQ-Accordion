@@ -2,6 +2,7 @@
   "repository": "FAQ Accordion",
   "bugs": [
     {
+      "comment": "Bug #1 - gradient background color",
       "bug_category": "Color",
       "bug_type": "from-red-5",
       "file_modified": "src/App.jsx",
@@ -12,11 +13,12 @@
       "bounding_box": {
         "x": 0,
         "y": 0,
-        "width": 0,
-        "height": 0
+        "width": 1280,
+        "height": 1420
       }
     },
     {
+      "comment": "Bug #2 - heading text color",
       "bug_category": "Color",
       "bug_type": "text-gray-500",
       "file_modified": "src/App.jsx",
@@ -25,13 +27,14 @@
       "buggy_code": "<h1 className=\"text-4xl font-bold text-gray-500 mb-3\">Frequently Asked Questions</h1>",
       "css_selector": "h1",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 256,
+        "y": 64,
+        "width": 768,
+        "height": 40
       }
     },
     {
+      "comment": "Bug #3 - category filter layout",
       "bug_category": "Layout",
       "bug_type": "flex-direction",
       "file_modified": "src/App.jsx",
@@ -40,13 +43,14 @@
       "buggy_code": "<div className=\"flex flex-col gap-3 justify-center mb-10\">",
       "css_selector": ".flex-col",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 256,
+        "y": 192,
+        "width": 768,
+        "height": 201
       }
     },
     {
+      "comment": "Bug #4 - button background color typo",
       "bug_category": "Typo",
       "bug_type": "bg-indigo-6",
       "file_modified": "src/App.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "? 'bg-indigo-6 text-white shadow-llg'",
       "css_selector": ".bg-indigo-6",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 256,
+        "y": 192,
+        "width": 768,
+        "height": 40
       }
     },
     {
+      "comment": "Bug #5 - shadow class typo",
       "bug_category": "Typo",
       "bug_type": "shadow-llg",
       "file_modified": "src/App.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "? 'bg-indigo-6 text-white shadow-llg'",
       "css_selector": ".shadow-llg",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 256,
+        "y": 192,
+        "width": 768,
+        "height": 40
       }
     },
     {
+      "comment": "Bug #6 - accordion content margin",
       "bug_category": "Spacing",
       "bug_type": "margin",
       "file_modified": "src/App.jsx",
@@ -85,13 +91,14 @@
       "buggy_code": "<div className=\"space-y-3 -mx-8\">",
       "css_selector": ".-mx-8",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 224,
+        "y": 433,
+        "width": 832,
+        "height": 923
       }
     },
     {
+      "comment": "Bug #7 - accordion item flex direction",
       "bug_category": "Layout",
       "bug_type": "flex-direction",
       "file_modified": "src/App.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "className={`w-full px-6 py-5 text-left flex-col justify-between items-start transition-all ${",
       "css_selector": ".flex-col",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 225,
+        "y": 434,
+        "width": 830,
+        "height": 68
       }
     },
     {
+      "comment": "Bug #8 - accordion content text color",
       "bug_category": "Color",
       "bug_type": "text-gray-100",
       "file_modified": "src/App.jsx",
@@ -115,13 +123,14 @@
       "buggy_code": "<div className=\"px-6 py-5 bg-white text-gray-100 leading-relaxed border-t border-gray-200 animate-fade-in\">",
       "css_selector": ".text-gray-100",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 225,
+        "y": 502,
+        "width": 830,
+        "height": 119
       }
     },
     {
+      "comment": "Bug #9 - footer z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/App.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "<div className=\"mt-14 text-center absolute -z-10 w-full\">",
       "css_selector": ".-z-10",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 256,
+        "y": 1412,
+        "width": 1280,
+        "height": 84
       }
     },
     {
+      "comment": "Bug #10 - animation transform value",
       "bug_category": "Spacing",
       "bug_type": "transform",
       "file_modified": "src/index.css",
@@ -145,10 +155,10 @@
       "buggy_code": "transform: translateY(-400px);",
       "css_selector": "transform",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 225,
+        "y": 502,
+        "width": 830,
+        "height": 119
       }
     }
   ]
