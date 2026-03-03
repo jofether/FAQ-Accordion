@@ -9,12 +9,12 @@
       "line_number": 24,
       "clean_code": "<div className=\"min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-16 px-4 font-sans\">",
       "buggy_code": "<div className=\"min-h-screen bg-gradient-to-br from-red-5 to-slate-100 py-16 px-4 font-sans\">",
-      "css_selector": ".from-red-5",
+      "css_selector": "div.min-h-screen.bg-gradient-to-br",
       "bounding_box": {
         "x": 0,
         "y": 0,
         "width": 1280,
-        "height": 1420
+        "height": 800
       }
     },
     {
@@ -25,7 +25,7 @@
       "line_number": 26,
       "clean_code": "<h1 className=\"text-4xl font-bold text-gray-900 mb-3\">Frequently Asked Questions</h1>",
       "buggy_code": "<h1 className=\"text-4xl font-bold text-gray-500 mb-3\">Frequently Asked Questions</h1>",
-      "css_selector": "h1",
+      "css_selector": "h1:has-text(\"Frequently Asked Questions\")",
       "bounding_box": {
         "x": 256,
         "y": 64,
@@ -41,7 +41,7 @@
       "line_number": 31,
       "clean_code": "<div className=\"flex flex-wrap gap-3 justify-center mb-10\">",
       "buggy_code": "<div className=\"flex flex-col gap-3 justify-center mb-10\">",
-      "css_selector": ".flex-col",
+      "css_selector": "div.flex.gap-3.justify-center",
       "bounding_box": {
         "x": 256,
         "y": 192,
@@ -57,11 +57,11 @@
       "line_number": 43,
       "clean_code": "? 'bg-indigo-600 text-white shadow-lg'",
       "buggy_code": "? 'bg-indigo-6 text-white shadow-llg'",
-      "css_selector": ".bg-indigo-6",
+      "css_selector": "button:has-text(\"Technical\")",
       "bounding_box": {
-        "x": 256,
+        "x": 560,
         "y": 192,
-        "width": 768,
+        "width": 160,
         "height": 40
       }
     },
@@ -73,11 +73,11 @@
       "line_number": 43,
       "clean_code": "? 'bg-indigo-600 text-white shadow-lg'",
       "buggy_code": "? 'bg-indigo-6 text-white shadow-llg'",
-      "css_selector": ".shadow-llg",
+      "css_selector": "button:has-text(\"Technical\")",
       "bounding_box": {
-        "x": 256,
+        "x": 560,
         "y": 192,
-        "width": 768,
+        "width": 160,
         "height": 40
       }
     },
@@ -89,7 +89,7 @@
       "line_number": 53,
       "clean_code": "<div className=\"space-y-3\">",
       "buggy_code": "<div className=\"space-y-3 -mx-8\">",
-      "css_selector": ".-mx-8",
+      "css_selector": "div.space-y-3",
       "bounding_box": {
         "x": 224,
         "y": 433,
@@ -105,7 +105,7 @@
       "line_number": 62,
       "clean_code": "className={`w-full px-6 py-5 text-left flex justify-between items-start transition-all ${",
       "buggy_code": "className={`w-full px-6 py-5 text-left flex-col justify-between items-start transition-all ${",
-      "css_selector": ".flex-col",
+      "css_selector": "button.justify-between.items-start",
       "bounding_box": {
         "x": 225,
         "y": 434,
@@ -121,7 +121,7 @@
       "line_number": 78,
       "clean_code": "<div className=\"px-6 py-5 bg-white text-gray-600 leading-relaxed border-t border-gray-200 animate-fade-in\">",
       "buggy_code": "<div className=\"px-6 py-5 bg-white text-gray-100 leading-relaxed border-t border-gray-200 animate-fade-in\">",
-      "css_selector": ".text-gray-100",
+      "css_selector": "div.animate-fade-in.leading-relaxed",
       "bounding_box": {
         "x": 225,
         "y": 502,
@@ -137,11 +137,11 @@
       "line_number": 89,
       "clean_code": "<div className=\"mt-14 text-center\">",
       "buggy_code": "<div className=\"mt-14 text-center absolute -z-10 w-full\">",
-      "css_selector": ".-z-10",
+      "css_selector": "div.mt-14.text-center",
       "bounding_box": {
         "x": 256,
-        "y": 1412,
-        "width": 1280,
+        "y": 1350,
+        "width": 768,
         "height": 84
       }
     },
@@ -153,12 +153,12 @@
       "line_number": 23,
       "clean_code": "transform: translateY(-4px);",
       "buggy_code": "transform: translateY(-400px);",
-      "css_selector": "transform",
+      "css_selector": "button:has-text(\"How do I get started with the model?\") ~ div.animate-fade-in",
       "bounding_box": {
-        "x": 225,
-        "y": 502,
-        "width": 830,
-        "height": 119
+        "x": 224,
+        "y": 0,
+        "width": 832,
+        "height": 1000
       }
     }
   ]
