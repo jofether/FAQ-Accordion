@@ -1,0 +1,12 @@
+{
+  "actions": [
+    {
+      "name": "bug-8-ExpandAccordion",
+      "selector": "div.space-y-3 > div:nth-child(1) > button"
+    },
+    {
+      "name": "bug-10-ExpandAccordion",
+      "selector": "div.space-y-3 > div:nth-child(6) > button"
+    }
+  ]
+}
