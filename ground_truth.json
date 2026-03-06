@@ -129,7 +129,7 @@
       "line_number": 78,
       "neg_code": "<div className=\"px-6 py-5 bg-white text-gray-600 leading-relaxed border-t border-gray-200 animate-fade-in\">",
       "pos_code": "<div className=\"px-6 py-5 bg-white text-gray-100 leading-relaxed border-t border-gray-200 animate-fade-in\">",
-      "css_selector": "div.animate-fade-in.leading-relaxed",
+      "css_selector": "div.bg-white.border-t",
       "bounding_box": {
         "x": 225,
         "y": 502,
